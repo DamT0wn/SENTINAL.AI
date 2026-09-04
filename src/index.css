@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@import "@xyflow/react/dist/style.css";
+
+:root {
+  --bg-main: #111827;
+  --bg-secondary: #151B2E;
+  --card-bg: #1D2638;
+  --card-hover: #253149;
+  --primary-blue: #4F7CFF;
+  --accent-purple: #8B5CF6;
+  --accent-cyan: #22D3EE;
+  --status-positive: #34D399;
+  --status-warning: #FBBF24;
+  --status-critical: #F87171;
+  --text-main: #F8FAFC;
+  --text-secondary: #94A3B8;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #111827;
+  color: #F8FAFC;
+  overflow-x: hidden;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #111827;
+}
+::-webkit-scrollbar-thumb {
+  background: #253149;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4F7CFF;
+}
+
+/* React Flow customizations for Dark Theme */
+.react-flow__pane {
+  background: #151B2E !important;
+}
+.react-flow__controls button {
+  background-color: #1D2638 !important;
+  color: #F8FAFC !important;
+  border-color: #253149 !important;
+  fill: #F8FAFC !important;
+}
+.react-flow__controls button:hover {
+  background-color: #253149 !important;
+}
+.react-flow__attribution {
+  display: none;
+}
